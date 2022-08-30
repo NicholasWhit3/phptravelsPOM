@@ -33,6 +33,10 @@ class RegistrationPage(object):
         self.registerButton = driver.find_element(By.XPATH ,Locator.register_button)
         self.generateNewPassword = driver.find_element(By.XPATH, Locator.generate_new_password)
         self.copyButton = driver.find_element(By.CSS_SELECTOR, Locator.generate_copy_button)
+        self.closeGenerateButton = driver.find_element(By.CSS_SELECTOR, Locator.close_generate_password_button)
+
+    def get_close_generate_password_button(self):
+        return self.closeGenerateButton
 
     def get_copy_button(self):
         return self.copyButton

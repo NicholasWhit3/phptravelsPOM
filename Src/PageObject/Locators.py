@@ -35,6 +35,7 @@ class Locator(object):
     copy_to_clipboard_and_insert = 'button[id="btnGeneratePasswordInsert"]'
     generate_new_password = '//*[text()[contains(.,"Generate new password")]]'
     generate_copy_button = 'img[alt="Copy to clipboard"]'
+    close_generate_password_button = '#modalGeneratePassword > div > div > div.modal-footer > button.btn.btn-default'
 
 
     def get_input_first_name(self):
